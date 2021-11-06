@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    
+    <link rel="stylesheet" href="./resources/css/styles.css">
+    <!-- Frontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>کیلید</title>
+</head>
+<body>
+    <div class='welcome'>
+       <div class='logo'>
+         <img src='./resources/images/logo.png'/>
+       </div>
+    </div>
+    <div class="form-collection">
+        <div class="card elevation-3 limit-width log-in-card below turned">
+       
+          <form name='register-form' id='register-form' method='post' action="http://localhost:8000/api/register/">
+            <h1 class="box-title">ثبت نام </h1>
+            
+            <div class="card-body">
+              <h3 id='fillform' name='fillform'></h3>
+                       <div class="input-group fullname">
+                  <i class="fa fa-user"></i>
+                <input name='full_name' type="text" placeholder="نام/نام خانوادگی" id='register-fullname' required/>
+                <small name='fullname_error'></small>
+              </div>
+              <div class="input-group email">
+                  <i class="fa fa-envelope"></i>
+                <input name ='email' type="email" placeholder="ایمیل" id='register-email' />
+                <small name='email_error'></small>
+              </div>
+              <div class="input-group phone">
+                  <i class="fa fa-phone-square"></i>
+                <input name='phone_number' type="number" placeholder="شماره تفن همراه" id='register-phone' />
+                <small name='phone_error'></small>
+              </div>
+              <div class="input-group text">
+                  <i class="fa fa-building"></i>
+                <input name='company_name'type="text" placeholder="نام شرکت/موسسه " id='register-company'/>
+                <small name='company_error'></small>
+              </div>
+              <div class="input-group text">
+                <i class="fa fa-id-card"></i>
+              <input name='job_title' type="text" placeholder="پست سازمانی " id='register-job' />
+              <small name='job_error'></small>
+             </div>
+              <div class="input-group password">
+                  <i class="fa fa-lock"></i>
+                <input name='password' type="password" placeholder="رمز عبور" id='register-password'/>
+                <small name='password_error'></small>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button type="submit" class="login-btn" name='register' form='register-form' id='register'>ثبت نام در سامانه</button>
+            </div>
+          </div>
+          </form>
+        <div class="card elevation-2 limit-width sign-up-card above">
+            <h1 class="box-title">ورود</h1>
+          <div class="card-body">
+
+            <div class="input-group email">
+                <i class="fa fa-envelope"></i>
+              <input type="email" placeholder="ایمیل"/>
+            </div>
+
+            <div class="input-group password">
+                <i class="fa fa-lock"></i>
+              <input type="password" placeholder="رمز عبور"/>
+            </div>
+          </div>
+          <br><br>
+          <a href="#" class="box-btn">رمز عبور خود را فراموش کردم</a>
+          <div class="card-footer">
+            <button type="submit" class="signup-btn" name='login'>ورود به سامانه</button>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Jquery CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
+      <script src="./resources/js/script.js"></script>
+      <script src='./resources/js/register.js'></script>
+      
+</body>
+</html>
